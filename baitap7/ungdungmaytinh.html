@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+.input {
+    width: 405px;
+    height: 25px;
+    margin-left: 350px;
+}
+.index{
+    margin-left: 350px;
+    border-collapse: collapse;
+    width: ;
+}
+table {
+    width: 409px;
+}
+button {
+    width: 57px;
+}
+    </style> -->
+    <style>
+    button {
+        width:  68px;
+    }
+    input {
+    width: 485px;
+    text-align: end;
+}
+body {
+    margin-left: 300px;
+}
+h3 {
+    background-color: aqua;
+    width: 493px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+html {
+    text-align: center;
+}
+button#so_AC {
+    background-color: #a7a1d1;
+}
+button#so_bang {
+    background-color: #a7a1d1;
+}
+button#so_Rad {
+    background-color: yellow;
+}
+button#so_lnv {
+    background-color: yellow;
+}
+button#so_π {
+    background-color: yellow;
+}
+button#so_cos {
+    background-color: yellow;
+}
+button#so_log {
+    background-color: yellow;
+}
+button#so_Ans {
+    background-color: yellow;
+}
+button#so_EXP {
+    background-color: yellow;
+}
+button#so_xmuy {
+    background-color: yellow;
+}
+button#so_e {
+    background-color: yellow;
+}
+button#so_ln {
+    background-color: yellow;
+}
+button#so_tan {
+    background-color: yellow;
+}
+button#so_can {
+    background-color: yellow;
+}
+button#so_sin {
+    background-color: yellow;
+}
+button#so_giaithua {
+    background-color: yellow;
+}
+h2 {
+    width: 574px;
+}
+    </style>
+</head>
+<body>
+    <h3 style="color: rgb(255, 8, 0);">Chiếc Điện Thoại Thần Kỳ</h3>
+    <table border="1">
+        <tr>
+            <td colspan="7"><input type="text" placeholder="0" id="so" value=""></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="so_Rad" onclick="xu_ly_radian()">Rad</button></td>
+            <td></td>
+            <td><button type="button" id="so_giaithua" onclick="xu_ly_giaithua()">x!</button></td>
+            <td><button type="button" id="so_(" onclick="xu_ly_ngoactrai()">(</button></td>
+            <td><button type="button" id="so_)" onclick="xu_ly_ngoacphai()">)</button></td>
+            <td><button type="button" id="so_%" onclick="xu_ly_phantram()">%</button></td>
+            <td><button type="button" id="so_AC" onclick="xu_ly_AC()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="so_lnv" onclick="xu_ly_lnv()">lnv</button></td>
+            <td><button type="button" id="so_sin" onclick="xu_ly_sin()">sin</button></td>
+            <td><button type="button" id="so_ln" onclick="xu_ly_ln()">ln</button></td>
+            <td><button type="button" id="so_7" onclick="xu_ly_so_7()">7</button></td>
+            <td><button type="button" id="so_8" onclick="xu_ly_so_8()">8</button></td>
+            <td><button type="button" id="so_9" onclick="xu_ly_so_9()">9</button></td>
+            <td><button type="button" id="so_chia" onclick="xu_ly_chia()">÷</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="so_π" onclick="xu_ly_pi()">π</button></td>
+            <td><button type="button" id="so_cos" onclick="xu_ly_cos()">cos</button></td>
+            <td><button type="button" id="so_log" onclick="xu_ly_log()">log</button></td>
+            <td><button type="button" id="so_4" onclick="xu_ly_so_4()">4</button></td>
+            <td><button type="button" id="so_5" onclick="xu_ly_so_5()">5</button></td>
+            <td><button type="button" id="so_6" onclick="xu_ly_so_6()">6</button></td>
+            <td><button type="button" id="so_×" onclick="xu_ly_nhan()">×</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="so_e" onclick="xu_ly_e()">e</button></td>
+            <td><button type="button" id="so_tan" onclick="xu_ly_tan()">tan</button></td>
+            <td><button type="button" id="so_can" onclick="xu_ly_can()">√</button></td>
+            <td><button type="button" id="so_1" onclick="xu_ly_so_1()">1</button></td>
+            <td><button type="button" id="so_2" onclick="xu_ly_so_2()">2</button></td>
+            <td><button type="button" id="so_3" onclick="xu_ly_so_3()">3</button></td>
+            <td> <button type="button" id="so_-" onclick="xu_ly_tru()">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" id="so_Ans" onclick="xu_ly_Ans()">Ans</button></td>
+            <td><button type="button" id="so_EXP" onclick="xu_ly_EXP()">EXP</button></td>
+            <td><button type="button" id="so_xmuy" onclick="xu_ly_mu()">x<sup>y</sup></button></td>
+            <td><button type="button" id="so_0" onclick="xu_ly_so_0()">0</button></td>
+            <td><button type="button" id="so_." onclick="xu_ly_cham()">.</button></td>
+            <td><button type="button" id="so_bang" onclick="xu_ly_bang()">=</button></td>
+            <td><button type="button" id="so_+" onclick="xu_ly_cong()">+</button></td>
+        </tr>
+    </table>
+    <h2 style="margin-right: 270px">Chú thích : Phần màu vàng bị liệt quý khách thông cảm</h2>
+</body>
+<script>
+    function xu_ly_so_1() {
+        var so = document.getElementById("so").value;//"gia tri rong value"
+        document.getElementById("so").value = so + 1;//1
+    }
+    function xu_ly_so_2() {
+        var so = document.getElementById("so").value;//1
+        document.getElementById("so").value = so + 2;//12
+    }
+    function xu_ly_so_3() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 3;
+    }
+    function xu_ly_cong() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "+";
+    }
+    function xu_ly_so_4() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 4;
+    }
+    function xu_ly_bang() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = eval(so);
+    }
+    function xu_ly_nhan() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "*";
+    }
+    function xu_ly_tru()  {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "-";
+    }
+    function xu_ly_chia() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_so_9() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 9;
+    }
+    function xu_ly_so_8() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 8;
+    }
+    function xu_ly_can()  {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_so_5() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 5;
+    }
+    function xu_ly_so_6() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 6;
+    } 
+    function xu_ly_so_7() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 7;
+    }
+    function xu_ly_radian()   {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_giaithua() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_ngoactrai(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "(";
+    }
+    function xu_ly_ngoacphai(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + ")   ";
+    }
+    function xu_ly_phantram() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "%";
+    }
+    function xu_ly_AC() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = "";
+    } 
+    function xu_ly_lvn(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_sin(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_ln() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_pi() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 'π';
+    } 
+    function xu_ly_so_0(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 0;
+    } 
+    function xu_ly_cos() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_log() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_e()   {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_tan() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    } 
+    function xu_ly_Ans() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_EXP() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_mu()  {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";}
+    function xu_ly_cham()  {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + ".";}
+</script>
+</html>
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="Bài 1" onclick="bai_1()">
+    <input type="button" value="Bài 2" onclick="bai_2()">
+    <input type="button" value="Bài 3" onclick="bai_3()">
+    <input type="button" value="Bài 4" onclick="bai_4()">
+    <script>
+        function bai_1() {
+            var Sinh_hoc = 8.5;
+            var Hoa_hoc = 9;
+            var Vat_ly = 7;
+
+            console.log(Sinh_hoc + Hoa_hoc + Vat_ly);
+            document.write((Sinh_hoc + Hoa_hoc + Vat_ly) / 3);
+        }
+
+        function bai_3() {
+            const PI = 3.14;
+            var ban_kinh = prompt('nhap ban kinh');
+            var ket_qua = ban_kinh * ban_kinh * PI;
+
+            console.log(ket_qua);
+        }
+
+        function bai_4() {
+            const PI = 3.14;
+            var ban_kinh = prompt('nhap ban kinh');
+            var ket_qua = 2 * ban_kinh * PI;
+
+            console.log(ket_qua);
+
+        }
+
+        function bai_2(){
+        //  C/5 = (F-32)/9
+        // C = ( (F-32)/9 ) * 5
+        var C = parseInt(prompt('nhap do C'));
+        var F= ( (9/5*C)+ 32);
+        document.write(C +' độ c = '+ F + ' độ F')
+        }
+
+    </script>
+</body>
+
+</html>

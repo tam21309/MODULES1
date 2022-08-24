@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var book_1 = 'van';
+        var book_2 = 'su';
+        var book_3 = 'dia';
+
+        var books = ['van', 'su', 'dia'];
+        var books_2 = new Array('van', 'su', 'dia');
+        console.log(books);
+        console.log(books[0]);
+        console.log(books[2]);
+
+        //dung vong lap:
+        for (var i = 0; i < books.length; i++) {
+            console.log(books[i]);
+        }
+
+        //xem do dai cua mang:
+        console.log(books.length);
+
+        //thay the phan tu bang gia tri moi:
+        books[0] = 'van hoc';
+        books[1] = 'lich su';
+
+        //them phan tu moi vao mang:
+        books.push('toan hoc');
+
+        var number = [];
+        for (i = 0; i < 11; i++) {
+            number.push(i)
+        } console.log(number);
+
+        var number = [];
+        for (i = 2; i < 10; i++){
+            number.push(i)
+        } console.log(number);
+
+        var number = [];
+        for ( i = 0;i < 11;i++){
+            if ( i % 2 == 0) {
+                number.push(i)
+            }
+        }console.log(number);
+
+        var number = [];
+        var total = 0;
+        for ( i = 0;i < 11;i++){
+            if ( i % 2 == 0) {
+                total = total + 1;
+                number.push(i)
+            }
+        }console.log(total);
+        console.log(number);
+
+
+        var array = [];
+        var total = 0;
+        var dem = 0;
+        for (i = 1; i <= 100; i++)
+            if (i % 3 == 0 && i % 5 == 0) {
+                array.push('FizzBuzz')
+            } else if (i % 5 == 0) {
+                array.push('Buzz')
+            } else if (i % 3 == 0) {
+                array.push('Fizz')
+            } else {
+                array.push(i)
+            } console.log(array)
+
+
+
+    </script>
+</body>
+
+</html>

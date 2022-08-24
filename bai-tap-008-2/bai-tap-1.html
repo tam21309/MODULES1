@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="bai_1" onclick="bai_1()">
+    <input type="button" value="bai_2" onclick="bai_2()">
+    <input type="button" value="bai_3" onclick="bai_3()">
+    <script>
+        function bai_1() {
+            mycolor = ["Red", "Green", "White", "Black"];
+            console.log(mycolor.join())
+        }
+        function bai_2() {
+            // number = [1,2,4,6,7,8]
+            // var num = window.prompt();
+            var str = num.toString();
+            var result = [str[0]];
+
+            for (var x = 1; x < str.length; x++) {
+                if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+                    result.push('-', str[x]);
+                } else {
+                    result.push(str[x]);
+                }
+            }
+            console.log(result.join(''));
+
+        }
+        function bai_3(){
+            var i = 'nguyen thi thao tam';
+            console.log(i.toUpperCase());
+        }
+    </script>
+</body>
+
+</html>

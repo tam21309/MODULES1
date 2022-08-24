@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            margin-left: 47px;
+        }
+
+        element.style {
+            margin-left: 50px;
+        }
+
+        th {
+            width: 172px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Nhập sô tiền muốn đổi</th>
+            <th>Đơn vị tiền nhập vào</th>
+            <th>Đơn vị tiền muốn đổi</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="doitien" value=" "></td>
+            <td>
+                <select name="" id="select1">
+                    <option value="VietNam">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="" id="select2">
+                    <option value="USD">USD</option>
+                    <option value="VietNam">VietNam</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="dt()">Convert</button>
+            </td>
+        </tr>
+        <td>
+            <p id="ketqua"></p>
+        </td>
+        <tr>
+
+        </tr>
+    </table>
+</body>
+<script>
+    function dt() {
+        var doitien = document.getElementById('doitien').value;
+        var select1 = document.getElementById('select1').value;
+        var select2 = document.getElementById('select2').value;
+        doitien = parseInt(doitien);
+        var kq = 0;
+        if (select1 == select2) {
+            kq = doitien;
+        }
+        else if (select1 == "VietNam" && select2 == "USD") {
+            kq = doitien / 23000;
+        }
+        else {
+            kq = doitien * 23000;
+        }
+        document.getElementById("ketqua").innerHTML = kq;
+    }
+</script>
+</body>
+
+</html>

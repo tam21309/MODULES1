@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="bai_1" onclick="bai_1()">
+    <input type="button" value="bai_2" onclick="bai_2()">
+    <input type="button" value="bai_3" onclick="bai_3()">
+    <input type="button" value="bai_4" onclick="bai_4()">
+    <input type="button" value="bai_5" onclick="bai_5()">
+    <script>
+        function bai_1() {
+            var i = [3, 5, 6, 2, 8, 3, 0];
+            console.log(i.reverse())
+        }
+
+        function bai_2() {
+            var i = [2, 3, 5, 7, 1, 0];
+            console.log(i.length)
+        }
+
+        function bai_3() {
+            var i = 'hello my';
+            console.log(i.length);
+        }
+
+        function bai_4() {
+            var i = 'what is your name';
+            var k = 'what is your name';
+            if (i == k) {
+                console.log('hai chuoi giong nhau');
+            } else {
+                console.log('hai chuoi khong giong nhau');
+            }
+        }
+
+        function bai_5() {
+            var arr = ['-', 3, 4, 6, 7, 'a', 'hd'];
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] == '-') {
+                    arr[i] = '_';
+                }
+            }
+            console.log(arr);
+        }
+    </script>
+</body>
+
+</html>

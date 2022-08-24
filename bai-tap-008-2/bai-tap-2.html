@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                var a = [
+                    'hello', 'bye', 'welcome','tâm'
+                ];
+                var b = [
+                    'xin chào', 'tạm biệt','chào mừng','yêu linh'
+                ];
+                function dich() {
+                    var nhap = document.getElementById('nhap').value;
+                    for (i = 0; i < a.length; i++) {
+                        if (nhap == a[i]) {
+                            document.getElementById('kq').innerHTML = nhap + ' có nghĩa là: ' + b[i];
+                        }
+                    }
+                }
+        
+            </script>
+</body>
+</html>

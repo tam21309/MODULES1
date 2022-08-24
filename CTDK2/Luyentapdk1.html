@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="Bài 1" onclick="bai_1()">
+    <input type="button" value="Bài 2" onclick="bai_2()">
+    <input type="button" value="Bài 3" onclick="bai_3()">
+    <input type="button" value="Bài 4" onclick="bai_4()">
+    <input type="button" value="Bài 5" onclick="bai_5()">
+    <input type="button" value="Bài 6" onclick="bai_6()">
+    <script>
+        function bai_1() {
+            var a = 5;
+            var b = 3;
+            if (a % b == 0) {
+                console.log('a chia het b');
+            } else {
+                console.log('a khong chia het b');
+            }
+        }
+        function bai_2() {
+            var age = 15;
+            if (age <= 15) {
+                console.log('không đủ điều kiện vào học lớp 10');
+            } else {
+                console.log('đủ điều kiện vào học lớp 10');
+            }
+        }
+        function bai_3() {
+            var N = 6;
+            if (N >= 0) {
+                console.log('lon hon 0');
+            } else {
+                console.log('nho hon 0');
+            }
+        }
+        function bai_4() {
+            var a = 6;
+            var b = 4;
+            var c = 5;
+            if (a > b && a > c) {
+                alert('a lớn nhất')
+            } else if (b > c) {
+                alert('b lớn nhất')
+            }
+            else {
+                alert('c lớn nhất')
+            }
+        }
+        function bai_5(){
+            var KT = prompt('nhap');
+            var GK = prompt('nhap');
+            var CK = prompt('nhap');
+            var TB = (KT+GK+CK)/3;
+            if (TB>=8) {
+                console.log('gioi');
+            } else if(TB >=6.5 && TB <8) {
+                console.log('kha');
+            }else{
+                console.log('trung binh');
+            }
+        }
+        function bai_6(){
+            var mang = prompt('Nhập mạng')
+        var sophut = prompt('Nhập số phút gọi')
+        if (mang == 'mobiphone') {
+            var cuoc = sophut * 1000
+            alert('Số tiền phải trả nội mạng:' + cuoc + 'vnd')
+        } else {
+            var cuoc = sophut * 2000
+            alert('Số tiền phải trả ngoại mạng:' + cuoc + 'vnd')
+        }
+        }
+    </script>
+</body>
+
+</html>

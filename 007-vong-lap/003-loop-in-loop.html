@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="mau_1" onclick="mau_1()">
+    <input type="button" value="mau_2" onclick="mau_2()">
+    <input type="button" value="mau_3" onclick="mau_3()">
+    <input type="button" value="mau_4" onclick="mau_4()">
+    <input type="button" value="mau_5" onclick="mau_5()">
+    <script>
+        function mau_1() {
+            for (var i = 2; i <= 9; i++) {
+                console.log('i :' + i);
+                for (var k = 1; k <= 10; k++) {
+                    console.log('k :' + k);
+                }
+                console.log('========')
+            }
+        }
+        function mau_2() {
+            for (i = 2; i < 10; i++) {
+                for (z = 1; z <= 10; z++) {
+                    console.log(i + ' x ' + z + ' = ' + i * z)
+                }
+                console.log('=========')
+            }
+        }
+
+        function mau_3() {
+            for (i = 1; i < 4; i++) {
+                for (t = 1; t < 6; t++) {
+                    document.write('      *      ')
+                }
+                document.write('<br>')
+            }
+        }
+
+        function mau_4() {
+            for (i = 1; i < 6; i++) {
+                for (k = 1; k <= i; k++) {
+                    document.write(' * ')
+                }
+                document.write('<br>')
+            }
+        }
+
+        function mau_5() {
+            for (i = 5; i >= 1; i--) {
+                for (k = 1; k <= i; k++) {
+                    document.write(' * ')
+                }
+                document.write('<br>')
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

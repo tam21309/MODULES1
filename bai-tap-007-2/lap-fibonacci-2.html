@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="bai_1" onclick="bai_1()">
+    <input type="button" value="bai_2" onclick="bai_2()">
+    <input type="button" value="bai_3" onclick="bai_3()">
+    <input type="button" value="bai_4" onclick="bai_4()">
+    <input type="button" value="bai_5" onclick="bai_5()">
+    <script>
+        function bai_1() {
+            var count = 20;
+            var num1 = 0;
+            var num2 = 1;
+            for (i = 1; i <= count; i++) {
+                document.write(num1 + " ");
+                let ketqua = num1 + num2;
+                num1 = num2;
+                num2 = ketqua;
+
+            }
+        }
+        function bai_2() {
+            var N = prompt('nhap N!');
+            var giaithua = 1;
+            for (i = 1; i <= N; i++) {
+                giaithua = giaithua * i;
+            }
+            document.write(giaithua)
+        }
+        function bai_3() {
+            for (i = 1; i < 6; i++) {
+                for (k = 1; k <= i; k++) {
+                    document.write(' * ')
+                }
+                document.write('<br>')
+            } '<br>'
+            for (i = 5; i >= 1; i--) {
+                for (k = 1; k <= i; k++) {
+                    document.write(' * ')
+                }
+                document.write('<br>')
+
+            } '<br>'
+            
+        }
+        function bai_4(){
+          document.write('********************'+'<br>');
+          document.write('* '+ '&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + '*' + '<br>' );
+          document.write('* '+ '&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + '*'+ '<br>'  );
+          document.write('* '+ '&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + '*' + '<br>' );
+          document.write('* '+ '&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + '*' + '<br>' );
+          document.write('* '+ '&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' + '*' + '<br>' );
+          document.write('********************');
+        }
+        function bai_5(){
+            var age = prompt('nhap so');
+            if (age > 0 && age < 120) {
+                console.log('la tuoi cua mot nguoi')
+            } else {
+                console.log('khong la tuoi cua mot nguoi')
+            }
+        }
+    </script>
+</body>
+
+</html>

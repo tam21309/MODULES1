@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="bai_1" onclick="bai_1()">
+    <input type="button" value="bai_2" onclick="bai_2()">
+    <input type="button" value="bai_3" onclick="bai_3()">
+    <input type="button" value="bai_4" onclick="bai_4()">
+    <input type="button" value="bai_5" onclick="bai_5()">
+    <input type="button" value="bai_6" onclick="bai_6()">
+    <input type="button" value="bai_7" onclick="bai_7()">
+    <input type="button" value="bai_8" onclick="bai_8()">
+    <input type="button" value="bai_9" onclick="bai_9()">
+    <script>
+        function bai_1() {
+            function ham(a) {
+                return a * a
+
+            }
+            alert(ham(5))
+        }
+
+        function bai_2() {
+            function dien_tich() {
+                let r = 8;
+                const PI = 3.14;
+                return r * r * PI
+            }
+            alert(dien_tich())
+
+            function chu_vi() {
+                let r = 13;
+                const PI = 3.14;
+                return r * 2 * PI
+            }
+            alert(chu_vi())
+        }
+
+        function bai_3() {
+            var n = prompt('nhap N!')
+            function giai_thua(n) {
+                var gt = 1;
+                for (i = 1; i <= n; i++) {
+                    gt = gt * i;
+                }
+                return gt;
+            }
+            alert(giai_thua(n));
+        }
+
+        function bai_4() {
+            function kiem_tra(a) {
+                if (typeof a === 'number') {
+                    return true;
+                } else if (typeof a === 'string') {
+                    return false;
+                }
+            }
+            alert(kiem_tra(24021997))
+        }
+
+        function bai_5() {
+            var min = 0;
+            function ham(a, b, c) {
+                if (a < b && a < c) {
+                    min = a;
+                } else if (b < a && b < c) {
+                    min = b;
+                } else {
+                    min = c;
+                }
+                return min;
+            }
+            alert(ham(24, 01, 25));
+        }
+
+        function bai_6() {
+            function nguyen_duong(a) {
+                if (a > 0) {
+                    return true
+                } else if (a < 0) {
+                    return false
+                }
+            }
+            alert(nguyen_duong(-24))
+        }
+
+        function bai_7() {
+            var x = prompt('nhap x');
+            var y = prompt('nhap y');
+            function swap(x, y) {
+                var temp = x;
+                var x = y;
+                var y = temp;
+                console.log(x, y);
+            }
+            swap(x, y)
+        }
+
+        function bai_8() {
+            var arr = [24, 02, 97, 01, 11, 03];
+            function ham(arr) {
+                return arr.reverse();
+            }
+            console.log(ham(arr));
+        }
+
+        function bai_9() {
+            var ham = ['n', 3, 4, 5, 'b', 2, 2];
+            var dem = 0;
+            function test(ham, a) {
+                for (i = 0; i < ham.length; i++) {
+                    if(a === ham[i]){
+                        dem++;
+                    }
+                }
+                if(dem > 0){
+                    console.log(dem);
+                }else if(dem <= 0){
+                    console.log(-1);
+                }
+            }
+            test(ham,10 );
+        }
+
+    </script>
+</body>
+
+</html>

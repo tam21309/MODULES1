@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function cong(a, b) {
+            return a + b;
+        }
+        function tru(a, b) {
+            return a - b;
+        }
+        function nhan(a, b) {
+            return a * b;
+        }
+        function chia(a, b) {
+            return a % b;
+        }
+
+        let phep_tinh = 'cong';
+        let result = '';
+        switch (phep_tinh) {
+            case 'cong':
+                result = cong(6, 2)
+                break;
+            case 'tru':
+                result = tru(6, 2)
+                break;
+            case 'nhan':
+                result = nhan(6, 2);
+                break;
+            case 'chia':
+                result = chia(6, 2)
+                break;
+            default:
+                break;
+        }
+        console.log(result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bat Su Kien Thong Qua Thuoc Tinh -->
+    <input onclick=" alert('Click')" type="button" name=""  value="Click Me">
+    <!-- Bat Su Kien Thong Qua Khoi lenh -->
+    <input onclick=" xuli()" type="button" value="Click2">
+    <!-- Bat Su Kien Thong qua Javascript -->
+    <input type="button" value="Click3" id="btn3">
+    <script>
+        // Khai bao khoi xu li
+        function xuli(){
+            alert('xuli')
+        }
+        // Bat Su Kien Nut Click 3
+            document.getElementById('btn3').addEventListener('click',function(){
+                alert('Click3')
+            });
+        
+    </script>
+</body>
+</html>
